@@ -95,6 +95,17 @@ a {
   text-decoration: none;
 }
 
+/* .link-styles {
+  text-decoration: none;
+  color: var(--clr-dark-font);
+  font-family: poppins;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s linear;
+} */
+
 .links a {
   color: var(--clr-dark-font);
   font-family: poppins;
@@ -173,5 +184,70 @@ a {
   }
   .contact button {
     margin: 0 0.5rem;
+  }
+}
+
+/*
+===========
+Hero
+===========
+*/
+.hero-container {
+  background-image: url("./images/herodark.jpg");
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container::after {
+  background: hsla(180, 0%, 50%, 0.5);
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px 20px 30px;
+}
+.hero-text h1 {
+  color: white;
+  font-family: poppins;
+  font-weight: bolder;
+  margin-top: 70px;
+  font-size: 2.5em;
+}
+.hero-text p {
+  color: white;
+  font-family: poppins;
+  font-weight: 280;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background: transparent;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-weight: 600;
+  padding: 1em 1.5em;
+  font-size: 1rem;
+  color: var(--clr-primary-yellow);
+  border: 3px solid var(--clr-primary-yellow);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-text {
+    display: block;
+    position: absolute;
+    width: 50%;
+  }
+  .hero-text h1 {
+    font-size: 3em;
+  }
+  .hero-text p {
+    font-size: 1.1em;
   }
 }
