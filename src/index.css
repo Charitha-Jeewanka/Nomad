@@ -12,6 +12,7 @@ variables
   /*primary colors*/
   --clr-primary-blue: #00b4d8;
   --clr-primary-yellow: #fdb200;
+  --clr-primary-orange: #ff7920;
   --clr-light-yellow: #ffcd56;
   --clr-dark-font: #2a260e;
 
@@ -193,7 +194,7 @@ Hero
 ===========
 */
 .hero-container {
-  background-image: url("./images/herodark.jpg");
+  background-image: url("./images/smallhero.jpg");
   height: 92vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -226,7 +227,7 @@ Hero
   margin-bottom: 20px;
 }
 
-.primary-btn {
+/* .primary-btn {
   background: transparent;
   text-transform: uppercase;
   font-family: poppins;
@@ -236,9 +237,58 @@ Hero
   color: var(--clr-primary-yellow);
   border: 3px solid var(--clr-primary-yellow);
   cursor: pointer;
+} */
+
+.primary-btn {
+  position: relative;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: poppins;
+  font-weight: 600;
+  padding: 1em 1.5em;
+  color: var(--clr-primary-orange);
+  border: none;
+  font-size: 1rem;
+  transform: none;
+  cursor: pointer;
+}
+
+.primary-btn:after {
+  content: "";
+  height: 100%;
+  width: calc(100% + 20px);
+  position: absolute;
+  top: -2px;
+  left: -10px;
+  border-top: 2px solid var(--clr-primary-orange);
+  border-bottom: 2px solid var(--clr-primary-orange);
+  transition: 1s;
+}
+
+.primary-btn:before {
+  content: "";
+  height: calc(100% + 20px);
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  left: -2px;
+  border-left: 2px solid var(--clr-primary-orange);
+  border-right: 2px solid var(--clr-primary-orange);
+  transition: 1s;
+}
+
+.primary-btn:hover:before {
+  transform: rotateY(180deg);
+}
+
+.primary-btn:hover:after {
+  transform: rotateX(180deg);
 }
 
 @media screen and (min-width: 800px) {
+  .hero-container {
+    background-image: url("./images/herodark.jpg");
+  }
   .hero-text {
     display: block;
     position: absolute;
@@ -249,5 +299,97 @@ Hero
   }
   .hero-text p {
     font-size: 1.1em;
+  }
+}
+
+/*
+================
+Welcome Section
+================
+*/
+
+.welcome-text {
+  margin: 25px;
+  justify-content: center;
+}
+
+.welcome-text h2 {
+  text-align: center;
+  color: var(--clr-primary-orange);
+  font-family: dancing script;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.welcome-text h1 {
+  text-transform: capitalize;
+  color: var(--clr-dark-font);
+  font-family: poppins;
+  text-align: center;
+}
+.welcome-text p {
+  text-align: justify;
+  font-family: poppins;
+  color: var(--clr-dark-font);
+  margin-bottom: 1rem;
+}
+
+.welcome-images {
+  padding: 2em;
+}
+.welcome-images img {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.image:hover {
+  scale: 1.02;
+  filter: brightness(0.8);
+  transition: scale 300ms ease-in;
+}
+@media screen and (min-width: 800px) {
+  .welcome {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .welcome-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 0 4em;
+  }
+  .welcome-text button {
+    width: 15rem;
+    align-items: center;
+  }
+  .welcome-text h1 {
+    text-align: left;
+    font-size: 3em;
+  }
+  .welcome-text h2 {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .welcome-text button {
+    vertical-align: middle;
+  }
+  .welcome-text p {
+    margin-right: 6em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .welcome-images {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+  }
+  .image {
+    width: 50%;
+    padding: 1em;
   }
 }
