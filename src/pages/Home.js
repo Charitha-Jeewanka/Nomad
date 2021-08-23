@@ -1,6 +1,4 @@
 import React from "react";
-// import HomeCards from "../components/HomeCards";
-// import { piccards } from "../data/dummyCards";
 import blueCard from "../images/blueCardComplete.jpg";
 import redCard from "../images/redCard.jpg";
 import greenCard from "../images/greenCard.jpg";
@@ -25,18 +23,7 @@ const Home = () => {
           <button className="primary-btn">get started</button>
         </div>
       </div>
-      {/* <div className="cards">
-        {piccards.map((item) => {
-          return (
-            <HomeCards
-              key={item.id}
-              img={item.url}
-              title={item.title}
-              author={item.author}
-            />
-          );
-        })}
-      </div> */}
+
       <div className="welcome">
         <div className="welcome-text">
           <h2>welcome to NOMAD</h2>
