@@ -334,6 +334,10 @@ Welcome Section
   margin-bottom: 1rem;
 }
 
+.welcome-text a {
+  width: 15rem;
+}
+
 .welcome-images {
   padding: 2em;
 }

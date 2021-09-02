@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import blueCard from "../images/blueCardComplete.jpg";
 import redCard from "../images/redCard.jpg";
 import greenCard from "../images/greenCard.jpg";
@@ -20,7 +22,9 @@ const Home = () => {
             us guide you to the journey of your lifetime. Plan your dream
             journey with NOMAD travels and leave your mind and body at peace
           </p>
-          <button className="primary-btn">get started</button>
+          <Link to="/destinations" className="primary-btn">
+            get started
+          </Link>
         </div>
       </div>
 
@@ -34,7 +38,9 @@ const Home = () => {
             to take care of things so you can focus on what to do when you get
             to the destination
           </p>
-          <button className="primary-btn">search destinations</button>
+          <Link to="/destinations" className="primary-btn">
+            search destinations
+          </Link>
         </div>
         <div className="welcome-images">
           <div className="image">

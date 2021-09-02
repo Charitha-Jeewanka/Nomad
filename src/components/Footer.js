@@ -1,15 +1,14 @@
 import React from "react";
-import "./Footer.css";
-// import { links } from "../data/RoutingData";
+import "../styles/Footer.css";
 import { FaGoogle, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div>
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col">
               <h4>About Us</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
@@ -17,14 +16,14 @@ const Footer = () => {
                 atque aspernatur!
               </p>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>Contact Us</h4>
               <p>
                 Deleted because errors pop up. Figure out a way to interact
                 google mail
               </p>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>Have a Question?</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
@@ -32,9 +31,9 @@ const Footer = () => {
                 animi repellendus nihil?
               </p>
             </div>
-            <div class="footer-col">
+            <div className="footer-col">
               <h4>follow us</h4>
-              <div class="social-links">
+              <div className="social-links">
                 <a href="https://www.google.com/">
                   <FaGoogle />
                 </a>

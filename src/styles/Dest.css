@@ -21,6 +21,9 @@
   padding: 10px;
 }
 
+.add-link {
+  margin: 2em 0 0 4em;
+}
 .dest-container h1 {
   color: white;
   font-family: poppins;
@@ -32,4 +35,10 @@
 .dest-container img {
   scale: 1;
   top: -20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }

@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Destinations from "./pages/Destinations";
+import Experiences from "./pages/Experiences";
+import CreateCard from "./pages/CreateCard";
 
 function App() {
   return (
@@ -15,6 +17,12 @@ function App() {
         </Route>
         <Route path="/destinations">
           <Destinations />
+        </Route>
+        <Route path="/experiences">
+          <Experiences />
+        </Route>
+        <Route path="/create">
+          <CreateCard />
         </Route>
       </Switch>
       <Footer />
